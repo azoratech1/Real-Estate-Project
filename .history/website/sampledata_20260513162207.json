@@ -1,0 +1,252 @@
+[
+  {
+    "title": "Luxury 3BHK Apartment in Sector 66",
+    "slug": "luxury-3bhk-apartment-sector-66",
+    "description": "Premium semi-furnished apartment with modern interiors, modular kitchen, spacious balconies and clubhouse access in a gated society.",
+    "shortDescription": "Luxury 3BHK apartment in Mohali.",
+    "propertyType": "Apartment",
+    "listingType": "Sale",
+    "country": "India",
+
+    "state": "PASTE_STATE_OBJECT_ID",
+    "city": "PASTE_CITY_OBJECT_ID",
+
+    "locality": "Sector 66",
+    "address": "Medallion Towers, Sector 66, Mohali",
+    "pincode": "160062",
+
+    "location": {
+      "type": "Point",
+      "coordinates": [76.7275, 30.6675]
+    },
+
+    "price": 14500000,
+    "maintenance": 4500,
+    "pricePerSqft": 8500,
+
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "balconies": 2,
+
+    "floor": 8,
+    "totalFloors": 18,
+
+    "furnishing": "Semi-Furnished",
+    "facing": "East",
+
+    "ageOfProperty": 2,
+
+    "builtUpArea": 1700,
+    "carpetArea": 1450,
+
+    "amenities": [
+      "Swimming Pool",
+      "Gym",
+      "Club House",
+      "24x7 Security",
+      "Power Backup",
+      "Kids Play Area",
+      "Lift",
+      "Parking"
+    ],
+
+    "images": [],
+
+    "status": "Active",
+    "featured": true,
+
+    "contactName": "Rahul Sharma",
+    "contactNumber": "9876543210",
+
+    "views": 120,
+    "enquiries": 14
+  },
+
+  {
+    "title": "Modern Luxury Villa in New Chandigarh",
+    "slug": "modern-luxury-villa-new-chandigarh",
+    "description": "Independent luxury villa with private garden, rooftop lounge, smart home automation and premium interiors in a gated community.",
+    "shortDescription": "Luxury villa in New Chandigarh.",
+    "propertyType": "Villa",
+    "listingType": "Sale",
+    "country": "India",
+
+    "state": "PASTE_STATE_OBJECT_ID",
+    "city": "PASTE_CITY_OBJECT_ID",
+
+    "locality": "New Chandigarh",
+    "address": "Omaxe Phase 2, New Chandigarh",
+    "pincode": "140901",
+
+    "location": {
+      "type": "Point",
+      "coordinates": [76.7008, 30.7820]
+    },
+
+    "price": 32000000,
+    "maintenance": 7000,
+    "pricePerSqft": 12000,
+
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "balconies": 4,
+
+    "floor": 2,
+    "totalFloors": 2,
+
+    "furnishing": "Furnished",
+    "facing": "North",
+
+    "ageOfProperty": 1,
+
+    "builtUpArea": 4200,
+    "carpetArea": 3600,
+    "plotArea": 5000,
+
+    "amenities": [
+      "Private Garden",
+      "Swimming Pool",
+      "Smart Home",
+      "CCTV",
+      "Power Backup",
+      "Covered Parking",
+      "Modular Kitchen",
+      "Terrace Lounge"
+    ],
+
+    "images": [],
+
+    "status": "Active",
+    "featured": true,
+
+    "contactName": "Aman Verma",
+    "contactNumber": "9988776655",
+
+    "views": 220,
+    "enquiries": 31
+  },
+
+  {
+    "title": "Premium Office Space in IT Park Chandigarh",
+    "slug": "premium-office-space-it-park-chandigarh",
+    "description": "Fully furnished office space with conference rooms, reception area and modern infrastructure located in Chandigarh IT Park.",
+    "shortDescription": "Commercial office space in IT Park.",
+    "propertyType": "Office",
+    "listingType": "Rent",
+    "country": "India",
+
+    "state": "PASTE_STATE_OBJECT_ID",
+    "city": "PASTE_CITY_OBJECT_ID",
+
+    "locality": "IT Park",
+    "address": "DLF Building, IT Park Chandigarh",
+    "pincode": "160101",
+
+    "location": {
+      "type": "Point",
+      "coordinates": [76.8188, 30.7280]
+    },
+
+    "price": 180000,
+    "maintenance": 12000,
+    "pricePerSqft": 95,
+
+    "bathrooms": 2,
+
+    "floor": 5,
+    "totalFloors": 12,
+
+    "furnishing": "Furnished",
+    "facing": "South",
+
+    "ageOfProperty": 3,
+
+    "builtUpArea": 2500,
+    "carpetArea": 2200,
+
+    "amenities": [
+      "Lift",
+      "Power Backup",
+      "Parking",
+      "24x7 Security",
+      "Central AC",
+      "Conference Room",
+      "Reception Area",
+      "High Speed Internet"
+    ],
+
+    "images": [],
+
+    "status": "Active",
+    "featured": false,
+
+    "contactName": "Neeraj Khanna",
+    "contactNumber": "9811112233",
+
+    "views": 80,
+    "enquiries": 9
+  },
+
+  {
+    "title": "2BHK Furnished Apartment in Zirakpur",
+    "slug": "2bhk-furnished-apartment-zirakpur",
+    "description": "Fully furnished apartment with modular kitchen, modern interiors and excellent connectivity near shopping malls and airport road.",
+    "shortDescription": "2BHK apartment for rent in Zirakpur.",
+    "propertyType": "Apartment",
+    "listingType": "Rent",
+    "country": "India",
+
+    "state": "PASTE_STATE_OBJECT_ID",
+    "city": "PASTE_CITY_OBJECT_ID",
+
+    "locality": "VIP Road",
+    "address": "Harmony Heights, VIP Road Zirakpur",
+    "pincode": "140603",
+
+    "location": {
+      "type": "Point",
+      "coordinates": [76.8165, 30.6425]
+    },
+
+    "price": 28000,
+    "maintenance": 2500,
+    "pricePerSqft": 32,
+
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "balconies": 2,
+
+    "floor": 6,
+    "totalFloors": 14,
+
+    "furnishing": "Furnished",
+    "facing": "East",
+
+    "ageOfProperty": 4,
+
+    "builtUpArea": 1200,
+    "carpetArea": 1020,
+
+    "amenities": [
+      "Gym",
+      "Lift",
+      "Security",
+      "Power Backup",
+      "Kids Play Area",
+      "Parking",
+      "Garden",
+      "Club House"
+    ],
+
+    "images": [],
+
+    "status": "Active",
+    "featured": true,
+
+    "contactName": "Simran Gill",
+    "contactNumber": "9898989898",
+
+    "views": 64,
+    "enquiries": 7
+  }
+]

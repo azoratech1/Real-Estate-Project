@@ -1,0 +1,93 @@
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState
+} from "react";
+
+const AuthContext = createContext();
+
+/*
+=====================================
+PROVIDER
+=====================================
+*/
+
+export const AuthProvider = ({ children }) => {
+
+  const [user, setUser] = useState(null);
+
+  /*
+  =====================================
+  LOAD USER
+  =====================================
+  */
+
+  useEffect(() => {
+
+    const storedUser = localStorage.getItem("user");
+
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+
+  }, []);
+
+  /*
+  =====================================
+  LOGIN
+  =====================================
+  */
+
+  const login = (userData, token) => {
+
+    localStorage.setItem(
+      "user",
+      JSON.stringify(userData)
+    );
+
+    localStorage.setItem(
+      "token",
+      token
+    );
+
+    setUser(userData);
+  };
+
+  /*
+  =====================================
+  LOGOUT
+  =====================================
+  */
+
+  const logout = () => {
+
+    localStorage.removeItem("user");
+
+    localStorage.removeItem("token");
+
+    setUser(null);
+  };
+
+  return (
+    <AuthContext.Provider
+      value={{
+        user,
+        login,
+        logout
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+/*
+=====================================
+CUSTOM HOOK
+=====================================
+*/
+
+export const useAuth = () => {
+  return useContext(AuthContext);
+};
