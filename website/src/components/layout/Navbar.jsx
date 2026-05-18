@@ -270,33 +270,72 @@ function Navbar() {
         >
 
           {/* CTA */}
+{/* LOGIN */}
 
-          <Link
+<a
 
-            to="/properties"
+  href="https://real-estate-project-1-ffwb.onrender.com/userlogin"
 
-            className="
-              hidden
-              md:flex
-              items-center
-              justify-center
-              bg-black
-              text-white
-              px-6
-              h-12
-              rounded-full
-              font-medium
-              shadow-lg
-              hover:scale-105
-              hover:bg-gray-900
-              transition-all
-              duration-300
-            "
-          >
+  target="_blank"
 
-            Explore Now
+  rel="noreferrer"
 
-          </Link>
+  className="
+    hidden
+    md:flex
+    items-center
+    justify-center
+    border
+    border-gray-300
+    bg-white/80
+    backdrop-blur-xl
+    text-black
+    px-5
+    h-12
+    rounded-full
+    font-medium
+    hover:bg-gray-100
+    transition-all
+    duration-300
+  "
+>
+
+  Login
+
+</a>
+
+{/* SIGNUP */}
+
+<a
+
+  href="https://real-estate-project-1-ffwb.onrender.com/signup"
+
+  target="_blank"
+
+  rel="noreferrer"
+
+  className="
+    hidden
+    md:flex
+    items-center
+    justify-center
+    bg-black
+    text-white
+    px-6
+    h-12
+    rounded-full
+    font-medium
+    shadow-lg
+    hover:scale-105
+    hover:bg-gray-900
+    transition-all
+    duration-300
+  "
+>
+
+  Sign Up
+
+</a>
 
           {/* MOBILE MENU BUTTON */}
 
@@ -437,32 +476,69 @@ function Navbar() {
 
           {/* MOBILE CTA */}
 
-          <Link
+        {/* MOBILE BUTTONS */}
 
-            to="/properties"
+<div
+  className="
+    mt-5
+    flex
+    flex-col
+    gap-3
+  "
+>
 
-            onClick={() =>
-              setIsOpen(false)
-            }
+  <a
 
-            className="
-              mt-5
-              h-12
-              rounded-2xl
-              bg-black
-              text-white
-              flex
-              items-center
-              justify-center
-              font-medium
-              shadow-lg
-            "
-          >
+    href="https://real-estate-project-1-ffwb.onrender.com/userlogin"
 
-            Explore Properties
+    target="_blank"
 
-          </Link>
+    rel="noreferrer"
 
+    className="
+      h-12
+      rounded-2xl
+      border
+      border-gray-200
+      bg-gray-50
+      text-black
+      flex
+      items-center
+      justify-center
+      font-medium
+    "
+  >
+
+    Login
+
+  </a>
+
+  <a
+
+    href="https://real-estate-project-1-ffwb.onrender.com/signup"
+
+    target="_blank"
+
+    rel="noreferrer"
+
+    className="
+      h-12
+      rounded-2xl
+      bg-black
+      text-white
+      flex
+      items-center
+      justify-center
+      font-medium
+      shadow-lg
+    "
+  >
+
+    Create Account
+
+  </a>
+
+</div>
         </div>
 
       </div>
