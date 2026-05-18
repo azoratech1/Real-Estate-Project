@@ -8,7 +8,7 @@ AXIOS INSTANCE
 
 const API = axios.create({
 
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://real-estate-project-6p9e.onrender.com/api",
 
   headers: {
     "Content-Type": "application/json"
