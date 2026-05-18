@@ -9,7 +9,7 @@ AXIOS INSTANCE
 const API = axios.create({
 
   baseURL:
-    "http://localhost:5000/api"
+    "https://real-estate-project-6p9e.onrender.com/api"
 });
 
 /*
