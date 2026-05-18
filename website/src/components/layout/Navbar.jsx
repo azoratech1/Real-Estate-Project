@@ -16,11 +16,7 @@ import {
 
 function Navbar() {
 
-  /*
-  =====================================
-  STATES
-  =====================================
-  */
+
 
   const [isOpen, setIsOpen] =
     useState(false);
