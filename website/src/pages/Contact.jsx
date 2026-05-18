@@ -17,9 +17,13 @@ import {
 import {
   useState
 } from "react";
-
+import {
+  toast
+} from "react-toastify";
 import MainLayout
-  from "../components/layout/MainLayout";
+  from "../components/layout/MainLayout"
+  
+  import API from "../services/api"
 
 function ContactPage() {
 
@@ -40,7 +44,9 @@ function ContactPage() {
 
       message: ""
     });
-
+const [loading,
+  setLoading] =
+  useState(false);
   /*
   =====================================
   HANDLE CHANGE
@@ -64,14 +70,78 @@ function ContactPage() {
   SUBMIT
   =====================================
   */
+/*
+=====================================
+SUBMIT
+=====================================
+*/
 
-  const handleSubmit =
-    (e) => {
+const handleSubmit =
+  async (e) => {
 
-      e.preventDefault();
+    e.preventDefault();
 
-      console.log(formData);
-    };
+    try {
+
+      setLoading(true);
+
+      /*
+      =====================================
+      API CALL
+      =====================================
+      */
+
+      const response =
+        await API.post(
+
+          "/contact/enquiry",
+
+          formData
+        );
+
+      /*
+      =====================================
+      SUCCESS
+      =====================================
+      */
+
+      toast.success(
+
+        response.data.message
+      );
+
+      /*
+      =====================================
+      RESET
+      =====================================
+      */
+
+      setFormData({
+
+        name: "",
+
+        email: "",
+
+        phone: "",
+
+        message: ""
+      });
+
+    } catch (error) {
+
+      toast.error(
+
+        error.response?.data
+          ?.message ||
+
+        "Failed to send message"
+      );
+
+    } finally {
+
+      setLoading(false);
+    }
+  };
 
   /*
   =====================================
@@ -808,7 +878,7 @@ function ContactPage() {
                   type="text"
 
                   name="name"
-
+                  required
                   value={formData.name}
 
                   onChange={handleChange}
@@ -836,7 +906,7 @@ function ContactPage() {
                   type="email"
 
                   name="email"
-
+                 required
                   value={formData.email}
 
                   onChange={handleChange}
@@ -864,7 +934,7 @@ function ContactPage() {
                   type="text"
 
                   name="phone"
-
+                  required
                   value={formData.phone}
 
                   onChange={handleChange}
@@ -892,7 +962,7 @@ function ContactPage() {
                   rows="6"
 
                   name="message"
-
+                  required
                   value={formData.message}
 
                   onChange={handleChange}
@@ -918,6 +988,7 @@ function ContactPage() {
 
                 <button
                   type="submit"
+                    disabled={loading}
                   className="
                     w-full
                     h-[72px]
@@ -937,7 +1008,13 @@ function ContactPage() {
                   "
                 >
 
-                  Send Message
+                 {
+  loading
+
+    ? "Sending..."
+
+    : "Send Message"
+}
 
                   <Send size={22} />
 

@@ -14,6 +14,11 @@ import NotFound from "./pages/NotFound";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/Contact";
 import NearbyProperties from "./pages/NearbyProperties";
+import {
+  ToastContainer
+} from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 /*
 =====================================
 APP
@@ -76,6 +81,10 @@ function App() {
         />
 
       </Routes>
+  <ToastContainer
+        position="top-right"
+        autoClose={3000}
+      />
 
     </BrowserRouter>
   );

@@ -13,6 +13,7 @@ import authRoutes from "./routes/authRoutes.js";
 import propertyRoutes from "./routes/propertyRoutes.js";
 import locationRoutes from "./routes/locationRoutes.js"
 import mapRoutes from "./routes/mapRoutes.js"
+import contactRoutes from "./routes/contactRoutes.js"
 /*
 =====================================
 ENV CONFIG
@@ -88,6 +89,10 @@ app.use("/api/properties", propertyRoutes);
 app.use(
   "/api/locations",
   locationRoutes
+);
+app.use(
+  "/api/contact",
+  contactRoutes
 );
 /*
 =====================================
